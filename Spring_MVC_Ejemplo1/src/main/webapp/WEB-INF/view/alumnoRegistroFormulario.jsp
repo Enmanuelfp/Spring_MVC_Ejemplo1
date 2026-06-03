@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,48 +11,73 @@
 </head>
 <body>
 
-<form:form action="procesarFormulario" modelAttribute="elAlumno">
+	<form:form action="procesarFormulario" modelAttribute="elAlumno">
 
-Nombre: <form:input path="nombre"/>
+Nombre: <form:input path="nombre" />
+		<form:errors path="nombre" style="color:red"></form:errors>
+		<br>
+		<br>
+		<br>
 
-<br><br><br>
+Apellido: <form:input path="apellido" />
 
-Apellido: <form:input path="apellido"/>
+		<br>
+		<br>
+		<br>
+		
+Edad: <form:input path="edad" />
+		<form:errors path="edad" style="color:red"></form:errors>
 
-<br><br><br>
+		<br>
+		<br>
+		<br>
+Email: <form:input path="email" />
+		<form:errors path="email" style="color:red"></form:errors>
 
-Asignatura Optativas: <br/>
+		<br>
+		<br>
+		<br>
 
-<form:select path="optativa" multiple="true">
+Asignatura Optativas: <br />
 
-	<form:option value="Diseño" label="Diseño"/>
-	<form:option value="Karate" label="Karate"/>
-	<form:option value="Comercio" label="Comercio"/>
-	<form:option value="Danza" label="Danza"/>
+		<form:select path="optativa" multiple="true">
 
-</form:select>
+			<form:option value="Diseño" label="Diseño" />
+			<form:option value="Karate" label="Karate" />
+			<form:option value="Comercio" label="Comercio" />
+			<form:option value="Danza" label="Danza" />
 
-<br/><br/><br/>
+		</form:select>
 
-	Barcelona<form:radiobutton path="ciudadEstudios" value="Barcelona"/>
-	Madrid<form:radiobutton path="ciudadEstudios" value="Madrid"/>
-	Valencia<form:radiobutton path="ciudadEstudios" value="Valencia"/>
-	Bilbao<form:radiobutton path="ciudadEstudios" value="Bilbao"/>
+		<br />
+		<br />
+		<br />
 
-<br/><br/><br/>
+	Barcelona<form:radiobutton path="ciudadEstudios" value="Barcelona" />
+	Madrid<form:radiobutton path="ciudadEstudios" value="Madrid" />
+	Valencia<form:radiobutton path="ciudadEstudios" value="Valencia" />
+	Bilbao<form:radiobutton path="ciudadEstudios" value="Bilbao" />
+
+		<br />
+		<br />
+		<br />
 
 	¿Que idioma quieres estudiar?
-	<br/><br/><br/>
-	Ingles<form:checkbox path="idiomasAlumno" value="Ingles"/>
-	Frances<form:checkbox path="idiomasAlumno" value="Frances"/>
-	Aleman<form:checkbox path="idiomasAlumno" value="Aleman"/>
-	Chino<form:checkbox path="idiomasAlumno" value="Chino"/>
+	<br />
+		<br />
+		<br />
+	Ingles<form:checkbox path="idiomasAlumno" value="Ingles" />
+	Frances<form:checkbox path="idiomasAlumno" value="Frances" />
+	Aleman<form:checkbox path="idiomasAlumno" value="Aleman" />
+	Chino<form:checkbox path="idiomasAlumno" value="Chino" />
 
-<br/><br/><br/>
+		<br />
+		<br />
+		<br />
 
-<input type="submit" value="Enviar">
+		<input type="submit" value="Enviar">
 
-</form:form>
+	</form:form>
 
 </body>
 </html>
