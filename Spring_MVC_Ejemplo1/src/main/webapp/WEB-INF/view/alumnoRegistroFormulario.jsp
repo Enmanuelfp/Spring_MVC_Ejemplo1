@@ -34,6 +34,21 @@ Asignatura Optativas: <br/>
 
 <br/><br/><br/>
 
+	Barcelona<form:radiobutton path="ciudadEstudios" value="Barcelona"/>
+	Madrid<form:radiobutton path="ciudadEstudios" value="Madrid"/>
+	Valencia<form:radiobutton path="ciudadEstudios" value="Valencia"/>
+	Bilbao<form:radiobutton path="ciudadEstudios" value="Bilbao"/>
+
+<br/><br/><br/>
+
+	¿Que idioma quieres estudiar?
+	<br/><br/><br/>
+	Ingles<form:checkbox path="idiomasAlumno" value="Ingles"/>
+	Frances<form:checkbox path="idiomasAlumno" value="Frances"/>
+	Aleman<form:checkbox path="idiomasAlumno" value="Aleman"/>
+	Chino<form:checkbox path="idiomasAlumno" value="Chino"/>
+
+<br/><br/><br/>
 
 <input type="submit" value="Enviar">
 

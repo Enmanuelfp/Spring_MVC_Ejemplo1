@@ -26,8 +26,26 @@ public class Alumno {
 		this.optativa = optativa;
 	}
 
+	public String getCiudadEstudios() {
+		return ciudadEstudios;
+	}
+
+	public void setCiudadEstudios(String ciudadEstudios) {
+		this.ciudadEstudios = ciudadEstudios;
+	}
+
+	public String getIdiomasAlumno() {
+		return idiomasAlumno;
+	}
+
+	public void setIdiomasAlumno(String idiomasAlumno) {
+		this.idiomasAlumno = idiomasAlumno;
+	}
+
 	private String nombre;
 	private String apellido;
 	private String optativa;
+	private String ciudadEstudios;
+	private String idiomasAlumno;
 
 }
