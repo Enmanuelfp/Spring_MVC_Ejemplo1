@@ -37,6 +37,13 @@ Email: <form:input path="email" />
 		<br>
 		<br>
 		<br>
+		
+CodigoPostal: <form:input path="codigoPostal" />
+		<form:errors path="codigoPostal" style="color:red"></form:errors>
+
+		<br>
+		<br>
+		<br>
 
 Asignatura Optativas: <br />
 

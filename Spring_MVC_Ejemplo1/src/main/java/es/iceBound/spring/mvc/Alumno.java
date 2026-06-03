@@ -3,9 +3,12 @@ package es.iceBound.spring.mvc;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
+
+import es.iceBound.spring.mvc.validacionesPersonalizadas.CPostalMadrid;
 
 public class Alumno {
 
@@ -64,6 +67,18 @@ public class Alumno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
+
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
+
 
 	@NotNull
 	@Size(min = 3, message = "Campo requerido")
@@ -80,5 +95,9 @@ public class Alumno {
 	private int edad;
 	@Email
 	private String email;
-
+	
+	//@Pattern(regexp="[0-9]{5}",message="Solo 5 valores numericos")
+	@CPostalMadrid
+	private String codigoPostal;
+						
 }

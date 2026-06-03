@@ -12,7 +12,8 @@
 	El alumno con nombre
 	<strong>${elAlumno.nombre}</strong>,apellido
 	<strong>${elAlumno.apellido }</strong>, edad:
-	<strong>${elAlumno.edad }</strong> y Email: <strong>${elAlumno.email}</strong> se ha registrado con exito
+	<strong>${elAlumno.edad }</strong>, Email: <strong>${elAlumno.email}</strong>
+	y Codigo Postal <strong>${elAlumno.codigoPostal}</strong> se ha registrado con exito
 	<br> La asignatura escogida es:
 	<strong>${elAlumno.optativa}</strong>
 	<br> La ciudad donde iniciara los estudios el alumno es:
